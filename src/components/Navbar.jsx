@@ -8,7 +8,7 @@ const Navbar = () => {
         {/* Logo */}
         <a href="#home" className="flex items-center gap-2 text-[#0A1E3F] font-bold text-2xl">
           <Droplet className="text-[#1a56db]" size={32} />
-          <span>AquaPro Plumbing</span>
+          <span>Bishwas Plumbing</span>
         </a>
         
         {/* Nav Links */}
