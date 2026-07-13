@@ -1,0 +1,95 @@
+/* Gallery.css */
+
+.gallery-section {
+    padding: 80px 0;
+    background: var(--text-white);
+}
+
+.gallery-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.gallery-title {
+    font-size: 2.5rem;
+    color: var(--brand-dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.camera-icon {
+    color: var(--brand-blue);
+}
+
+.gallery-desc {
+    color: #64748b;
+    margin-top: 15px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+}
+
+/* RESPONSIVE GRID MATRIX WITH STRONG GAPING */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 32px; /* Gap between pictures on mobile */
+}
+
+/* Tablet Layout gap controls */
+@media (min-width: 768px) {
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 32px;
+    }
+}
+
+/* Desktop Layout gap controls */
+@media (min-width: 1024px) {
+    .gallery-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 32px; /* Beautiful spacing between images */
+    }
+}
+
+/* IMAGE CARDS AND HOVER ZOOM */
+.gallery-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    height: 280px;
+    background: var(--brand-light);
+    cursor: pointer;
+}
+
+.gallery-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.gallery-card:hover .gallery-img {
+    transform: scale(1.1);
+}
+
+/* SLEEK BRAND COLOR HOVER OVERLAY */
+.gallery-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to top, rgba(10, 30, 63, 0.7) 0%, rgba(10, 30, 63, 0.2) 60%, transparent 100%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.gallery-card:hover .gallery-overlay {
+    opacity: 1;
+}
