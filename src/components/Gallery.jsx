@@ -1,5 +1,6 @@
 import React from 'react';
 import { Camera } from 'lucide-react';
+import '../Stylesheet/Gallery.css'; // This points out of components and into your Stylesheet folder
 
 const Gallery = () => {
   // Array mapping to your 10 local images in the public folder
