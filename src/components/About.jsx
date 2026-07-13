@@ -7,7 +7,7 @@ const About = () => {
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
         <div>
           <p className="text-[#1a56db] font-bold uppercase text-sm mb-2">Why Choose Us</p>
-          <h2 className="text-4xl font-bold text-[#0A1E3F] mb-6">Why Homeowners in Nepal Choose AquaPro</h2>
+          <h2 className="text-4xl font-bold text-[#0A1E3F] mb-6">Why Homeowners in Nepal Choose Bishwas Plumbing</h2>
           <p className="text-gray-600 mb-8 leading-relaxed">
             We are committed to providing top-quality plumbing services with honesty, integrity, and professionalism. Serving Tusal and the greater Kathmandu valley with expert technicians you can rely on.
           </p>
@@ -28,9 +28,14 @@ const About = () => {
           </div>
         </div>
         
-        {/* Placeholder for an image */}
-        <div className="bg-slate-200 h-[500px] rounded-xl relative">
-          <div className="absolute -bottom-6 -left-6 bg-[#1a56db] text-white p-6 rounded-full border-8 border-white text-center w-40 h-40 flex flex-col justify-center items-center">
+        {/* Image Container with the live picture */}
+        <div className="h-[500px] rounded-xl relative overflow-visible">
+          <img 
+            src="/about.jpeg" 
+            alt="Bishwas Plumbing Team Work" 
+            className="w-full h-full object-cover rounded-xl shadow-md"
+          />
+          <div className="absolute -bottom-6 -left-6 bg-[#1a56db] text-white p-6 rounded-full border-8 border-white text-center w-40 h-40 flex flex-col justify-center items-center z-10">
             <span className="text-4xl font-bold">15+</span>
             <span className="text-xs uppercase font-semibold">Years Exp.</span>
           </div>

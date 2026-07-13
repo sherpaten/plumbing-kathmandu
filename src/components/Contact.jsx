@@ -22,7 +22,7 @@ const Contact = () => {
     e.preventDefault(); // Prevents the page from refreshing
     
     // Format the message nicely for WhatsApp
-    const whatsappText = `Hello AquaPro Plumbing!%0A%0A*Name:* ${formData.name}%0A*Phone:* ${formData.phone}%0A*Issue:* ${formData.message}`;
+    const whatsappText = `Hello Bishwas Plumbing!%0A%0A*Name:* ${formData.name}%0A*Phone:* ${formData.phone}%0A*Issue:* ${formData.message}`;
     
     // Create the final link
     const finalLink = `https://wa.me/${whatsappNumber}?text=${whatsappText}`;
@@ -39,7 +39,7 @@ const Contact = () => {
         <div>
           <div className="flex items-center gap-2 font-bold text-3xl mb-6">
             <Droplet className="text-[#1a56db]" size={36} />
-            <span>AquaPro</span>
+            <span>Bishwas</span>
           </div>
           <p className="text-gray-400 mb-8 max-w-md">
             Providing reliable, professional, and affordable plumbing services for homes and businesses across Kathmandu.
@@ -65,8 +65,8 @@ const Contact = () => {
             
             <div className="flex items-center gap-4">
               <Mail className="text-[#1a56db]" size={20} />
-              <a href="mailto:info@aquapro.com.np" className="hover:text-[#1a56db] transition">
-                info@aquapro.com.np
+              <a href="mailto:info@Bishwashplumbing.com" className="hover:text-[#1a56db] transition">
+                info@Bishwashplumbing.com
               </a>
             </div>
           </div>
@@ -120,7 +120,7 @@ const Contact = () => {
       </div>
 
       <div className="border-t border-gray-800 pt-8 text-center text-gray-500 text-sm">
-        <p>&copy; 2026 AquaPro Plumbing. All Rights Reserved.</p>
+        <p>&copy; 2026 Bishwash Plumbing. All Rights Reserved.</p>
       </div>
     </footer>
   );
