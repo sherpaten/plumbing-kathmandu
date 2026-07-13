@@ -28,9 +28,14 @@ const About = () => {
           </div>
         </div>
         
-        {/* Placeholder for an image */}
-        <div className="bg-slate-200 h-[500px] rounded-xl relative">
-          <div className="absolute -bottom-6 -left-6 bg-[#1a56db] text-white p-6 rounded-full border-8 border-white text-center w-40 h-40 flex flex-col justify-center items-center">
+        {/* Image Container with the live picture */}
+        <div className="h-[500px] rounded-xl relative overflow-visible">
+          <img 
+            src="/about.jpeg" 
+            alt="Bishwas Plumbing Team Work" 
+            className="w-full h-full object-cover rounded-xl shadow-md"
+          />
+          <div className="absolute -bottom-6 -left-6 bg-[#1a56db] text-white p-6 rounded-full border-8 border-white text-center w-40 h-40 flex flex-col justify-center items-center z-10">
             <span className="text-4xl font-bold">15+</span>
             <span className="text-xs uppercase font-semibold">Years Exp.</span>
           </div>
