@@ -9,7 +9,7 @@ const Navbar = () => {
           <img 
             src="/logo.jpeg" 
             alt="Bishwas Plumbing Logo" 
-            className="h-15 w-17 object-contain" 
+            className="h-10 w- auto object-contain" 
           />
         </a>
         
