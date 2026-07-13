@@ -1,18 +1,17 @@
 import React from 'react';
-import { Droplet } from 'lucide-react';
 
 const Navbar = () => {
   return (
     <header className="bg-white shadow-sm sticky top-0 z-50 py-4">
-  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
-    {/* Logo */}
-    <a href="#home" className="flex items-center">
-      <img 
-        src="/logo.jpeg" 
-        alt="Bishwas Plumbing Logo" 
-        className="h-15 w-17 object-contain" 
-      />
-    </a>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
+        {/* Logo */}
+        <a href="#home" className="flex items-center">
+          <img 
+            src="/logo.jpeg" 
+            alt="Bishwas Plumbing Logo" 
+            className="h-15 w-17 object-contain" 
+          />
+        </a>
         
         {/* Nav Links */}
         <nav className="hidden md:flex gap-8 font-semibold">
